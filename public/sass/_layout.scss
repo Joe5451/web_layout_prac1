@@ -31,6 +31,13 @@
     }
 }
 
+.col-md-9 {
+    width: 75%;
+    @include breakpoint-md {
+        width: 100%;
+    }
+}
+
 header {
     background: url('../img/header-bg.jpg') no-repeat center;
     background-size: cover;

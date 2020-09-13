@@ -18,7 +18,7 @@
         @content;
     }
 }
-@mixin breakpoint-xs(){
+@mixin breakpoint-xs{
     @media (max-width:375px) {
         @content;
     }

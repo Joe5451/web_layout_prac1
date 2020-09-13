@@ -110,6 +110,15 @@ header .navbar .menu, header .links, .wrapper {
   }
 }
 
+.col-md-9 {
+  width: 75%;
+}
+@media (max-width: 768px) {
+  .col-md-9 {
+    width: 100%;
+  }
+}
+
 header {
   background: url("../img/header-bg.jpg") no-repeat center;
   background-size: cover;
@@ -279,8 +288,35 @@ header .navbar .menu li a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.shopNow-container .shopNow {
+.shopNow-container .shopNow, .shopNow-container .shopNow-larger {
   padding: 0 15px;
+}
+.shopNow-container .shopNow > div, .shopNow-container .shopNow-larger > div {
+  padding: 30px;
+}
+.shopNow-container .shopNow > div h3, .shopNow-container .shopNow > div p, .shopNow-container .shopNow-larger > div h3, .shopNow-container .shopNow-larger > div p {
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+.shopNow-container .shopNow > div h3, .shopNow-container .shopNow-larger > div h3 {
+  color: #F5F5F5;
+  margin-top: 30px;
+}
+.shopNow-container .shopNow > div p, .shopNow-container .shopNow-larger > div p {
+  color: #2f2f2f;
+}
+.shopNow-container .shopNow > div a, .shopNow-container .shopNow-larger > div a {
+  display: inline-block;
+  color: #F5F5F5;
+  font-weight: bold;
+  border: 2px solid #F5F5F5;
+  padding: 5px 13px;
+  margin: 10px 0 30px;
+}
+@media (max-width: 768px) {
+  .shopNow-container .shopNow, .shopNow-container .shopNow-larger {
+    margin-bottom: 1.5rem;
+  }
 }
 .shopNow-container .shopNow:nth-child(1) > div {
   background: #2D75E3 url("../img/shopnow1.png") no-repeat;
@@ -297,32 +333,29 @@ header .navbar .menu li a:hover {
   background-position: 136px;
   background-size: contain;
 }
-.shopNow-container .shopNow > div {
-  padding: 30px;
+.shopNow-container .shopNow-larger > div {
+  height: 100%;
 }
-.shopNow-container .shopNow > div h3, .shopNow-container .shopNow > div p {
-  line-height: 1.5rem;
-  font-weight: bold;
+.shopNow-container .shopNow-larger:nth-child(1) > div {
+  background: #8533FD url("../img/shopnow4.png") no-repeat;
+  background-position: 335px center;
+  background-size: contain;
+  padding: 70px 15px;
 }
-.shopNow-container .shopNow > div h3 {
-  color: #F5F5F5;
-  margin-top: 30px;
-}
-.shopNow-container .shopNow > div p {
-  color: #2f2f2f;
-}
-.shopNow-container .shopNow > div a {
-  display: inline-block;
-  color: #F5F5F5;
-  font-weight: bold;
-  border: 2px solid #F5F5F5;
-  padding: 5px 13px;
-  margin: 10px 0 30px;
-}
-@media (max-width: 768px) {
-  .shopNow-container .shopNow {
-    margin-bottom: 1.5rem;
+@media (max-width: 576px) {
+  .shopNow-container .shopNow-larger:nth-child(1) > div {
+    background-position: 150px center;
   }
+}
+.shopNow-container .shopNow-larger:nth-child(1) > div p {
+  width: 45%;
+}
+.shopNow-container .shopNow-larger:nth-child(2) > div {
+  background: #462DE3 url("../img/shopnow5.png") no-repeat;
+  background-position: center 10px;
+  background-size: auto 50%;
+  padding-top: 155px;
+  text-align: center;
 }
 
 .hotProducts-container, .specialProducts-container {

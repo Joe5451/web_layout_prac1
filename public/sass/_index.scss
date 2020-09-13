@@ -50,27 +50,9 @@
     display: flex;
     flex-wrap: wrap;
 
-    .shopNow {
+    .shopNow, .shopNow-larger {
         padding: 0 15px;
 
-        &:nth-child(1)>div {
-            background: $bg-primary url('../img/shopnow1.png') no-repeat;
-            background-position: 85px;
-            background-size: cover;
-        }
-    
-        &:nth-child(2)>div {
-            background: $bg-secondary url('../img/shopnow2.png') no-repeat;
-            background-position: 180px;
-            background-size: contain;
-        }
-    
-        &:nth-child(3)>div {
-            background: $bg-tertiary url('../img/shopnow3.png') no-repeat;
-            background-position: 136px;
-            background-size: contain;;
-        }
-        
         &>div {
             padding: 30px;
 
@@ -100,6 +82,59 @@
         
         @include breakpoint-md {
             margin-bottom: 1.5rem;
+        }
+    }
+
+    .shopNow {
+        &:nth-child(1)>div {
+            background: $bg-primary url('../img/shopnow1.png') no-repeat;
+            background-position: 85px;
+            background-size: cover;
+        }
+    
+        &:nth-child(2)>div {
+            background: $bg-secondary url('../img/shopnow2.png') no-repeat;
+            background-position: 180px;
+            background-size: contain;
+        }
+    
+        &:nth-child(3)>div {
+            background: $bg-tertiary url('../img/shopnow3.png') no-repeat;
+            background-position: 136px;
+            background-size: contain;
+        }
+    }
+
+    .shopNow-larger {
+        
+
+        &>div {
+            
+            height: 100%;
+        }
+
+        &:nth-child(1)>div {
+            background: $bg-tertiary url('../img/shopnow4.png') no-repeat;
+            background-position: 335px center;
+            background-size: contain;
+            padding: 70px 15px;
+
+            @include breakpoint-sm {
+                background-position: 150px center;
+            }
+
+            p {
+                width: 45%;
+            }
+        }
+
+        &:nth-child(2)>div {
+            background: $bg-secondary url('../img/shopnow5.png') no-repeat;
+            background-position: center 10px;
+            background-size: auto 50%;
+
+            padding-top: 155px;
+            text-align: center;
         }
     }
 }
