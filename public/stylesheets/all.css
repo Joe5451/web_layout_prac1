@@ -1,0 +1,457 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  /* my add */
+  font-family: sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* my add */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button {
+  outline: none;
+}
+
+header .navbar .menu, header .links, .wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-site {
+  padding: 30px 0;
+}
+
+.section-site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 15px 30px;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 100%;
+  }
+}
+
+.col-md-4 {
+  width: 33.33%;
+}
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 100%;
+  }
+}
+
+header {
+  background: url("../img/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+header .links {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .links > div {
+  width: 33.33%;
+  padding: 10px 15px;
+}
+@media (max-width: 768px) {
+  header .links > div {
+    width: 100%;
+  }
+}
+header .links .logo a {
+  color: #F5F5F5;
+  font-size: 28px;
+}
+header .links .search .searchbar {
+  position: relative;
+}
+header .links .search .searchbar input {
+  display: block;
+  font-size: 1rem;
+  padding: 5px 20px;
+  padding-right: 40px;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+header .links .search .searchbar button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: #2D75E3;
+}
+header .links .sub-links {
+  text-align: right;
+}
+header .links .sub-links a {
+  margin-left: 0.5rem;
+  color: #2f2f2f;
+  font-size: 0.75rem;
+}
+header .links .sub-links a i {
+  font-size: 1rem;
+  color: #2D75E3;
+}
+header .navbar {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0 15px;
+  position: relative;
+}
+header .navbar #menu-toggle {
+  display: none;
+}
+header .navbar .menu-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  line-height: 40px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header .navbar .menu-btn {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header .navbar #menu-toggle:checked ~ .menu {
+    display: block;
+  }
+}
+header .navbar .menu {
+  display: flex;
+  justify-content: center;
+}
+header .navbar .menu li {
+  margin: 0 15px;
+}
+header .navbar .menu li a {
+  display: block;
+  padding: 22px 0;
+  border-bottom: 5px solid transparent;
+  font-size: 0.75rem;
+  text-align: center;
+}
+header .navbar .menu li a:hover {
+  color: #2D75E3;
+  border-bottom-color: #2D75E3;
+}
+@media (max-width: 768px) {
+  header .navbar .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  header .navbar .menu li {
+    margin: 0;
+  }
+  header .navbar .menu li a {
+    border: 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.information {
+  width: 25%;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.information li {
+  width: 100%;
+  background: #F5F5F5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.information li:first-child {
+  padding: 20px;
+  background: #2D75E3;
+  border-bottom: 0;
+  color: #F5F5F5;
+  font-weight: bold;
+}
+.information li:last-child {
+  border-bottom: 0;
+}
+.information li a {
+  display: block;
+  padding: 12px 20px;
+  height: 100%;
+  line-height: 25px;
+}
+.information li a:hover {
+  background: rgba(0, 0, 0, 0.07);
+}
+@media (max-width: 768px) {
+  .information {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.shopNow-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shopNow-container .shopNow {
+  padding: 0 15px;
+}
+.shopNow-container .shopNow:nth-child(1) > div {
+  background: #2D75E3 url("../img/shopnow1.png") no-repeat;
+  background-position: 85px;
+  background-size: cover;
+}
+.shopNow-container .shopNow:nth-child(2) > div {
+  background: #462DE3 url("../img/shopnow2.png") no-repeat;
+  background-position: 180px;
+  background-size: contain;
+}
+.shopNow-container .shopNow:nth-child(3) > div {
+  background: #8533FD url("../img/shopnow3.png") no-repeat;
+  background-position: 136px;
+  background-size: contain;
+}
+.shopNow-container .shopNow > div {
+  padding: 30px;
+}
+.shopNow-container .shopNow > div h3, .shopNow-container .shopNow > div p {
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+.shopNow-container .shopNow > div h3 {
+  color: #F5F5F5;
+  margin-top: 30px;
+}
+.shopNow-container .shopNow > div p {
+  color: #2f2f2f;
+}
+.shopNow-container .shopNow > div a {
+  display: inline-block;
+  color: #F5F5F5;
+  font-weight: bold;
+  border: 2px solid #F5F5F5;
+  padding: 5px 13px;
+  margin: 10px 0 30px;
+}
+@media (max-width: 768px) {
+  .shopNow-container .shopNow {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.hotProducts-container, .specialProducts-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+.product-card img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.product-card p {
+  margin-bottom: 0.5rem;
+}
+.product-card strong {
+  display: block;
+  font-weight: bold;
+  color: #FF3C35;
+  margin-bottom: 1rem;
+}
+.product-card button {
+  display: block;
+  background: #2D75E3;
+  border: 0;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #F5F5F5;
+  padding: 10px 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  padding: 0 15px;
+  width: 75%;
+  height: 370px;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+  /* On smaller screens, decrease text size */
+}
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 100%;
+    height: 240px;
+  }
+}
+.slideshow-container .mySlides {
+  display: none;
+  height: 100%;
+}
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slideshow-container .next {
+  right: 15px;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container .controller {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+}
+.slideshow-container .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow-container .active, .slideshow-container .dot:hover {
+  background-color: #717171;
+}
+.slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .slideshow-container .prev, .slideshow-container .next, .slideshow-container .text {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=all.css.map */

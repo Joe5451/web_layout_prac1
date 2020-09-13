@@ -1,0 +1,142 @@
+.wrapper {
+    @extend %mxw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.information {
+    width: 25%;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: 100%;
+        background: $bg-light;
+        border-bottom: 1px solid rgba(0,0,0,.07);
+
+        &:first-child {
+            padding: 20px;
+            background: $bg-primary;
+            border-bottom: 0;
+            color: $color-light;
+            font-weight: bold;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        a {
+            display: block;
+            padding: 12px 20px;
+            height: 100%;
+            line-height: 25px;
+
+            &:hover {
+                background: rgba(0,0,0,.07);
+            }
+        }
+    }
+
+    @include breakpoint-md {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.shopNow-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .shopNow {
+        padding: 0 15px;
+
+        &:nth-child(1)>div {
+            background: $bg-primary url('../img/shopnow1.png') no-repeat;
+            background-position: 85px;
+            background-size: cover;
+        }
+    
+        &:nth-child(2)>div {
+            background: $bg-secondary url('../img/shopnow2.png') no-repeat;
+            background-position: 180px;
+            background-size: contain;
+        }
+    
+        &:nth-child(3)>div {
+            background: $bg-tertiary url('../img/shopnow3.png') no-repeat;
+            background-position: 136px;
+            background-size: contain;;
+        }
+        
+        &>div {
+            padding: 30px;
+
+            h3, p {
+                line-height: 1.5rem;
+                font-weight: bold;
+            }
+
+            h3 {
+                color: $color-light;
+                margin-top: 30px;
+            }
+        
+            p {
+                color: $color-dark;
+            }
+        
+            a {
+                display: inline-block;
+                color: $color-light;
+                font-weight: bold;
+                border: 2px solid $color-light;
+                padding: 5px 13px;
+                margin: 10px 0 30px;
+            }
+        }
+        
+        @include breakpoint-md {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.hotProducts-container, .specialProducts-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    // width: 100%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+
+    img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    strong {
+        display: block;
+        font-weight: bold;
+        color: $color-marked;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        display: block;
+        background: $bg-primary;
+        border: 0;
+        border-radius: 50px;
+        font-weight: bold;
+        color: $color-light;
+        padding: 10px 20px;
+    }
+}
