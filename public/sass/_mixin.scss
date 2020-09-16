@@ -1,9 +1,9 @@
-@mixin breakpoint-xl(){
+@mixin breakpoint-xl{
     @media (max-width:1200px) {
         @content;
     }
 }
-@mixin breakpoint-lg(){
+@mixin breakpoint-lg{
     @media (max-width:992px){
         @content;
     }
@@ -13,7 +13,7 @@
         @content;
     }
 }
-@mixin breakpoint-sm(){
+@mixin breakpoint-sm{
     @media (max-width:576px){
         @content;
     }
