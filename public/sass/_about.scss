@@ -1,0 +1,45 @@
+.about-page {
+    padding: 0 15px;
+
+    p {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        color: #767676;
+    }
+}
+
+.ourstore, .ourteam {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-card, .ourteam-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    i {
+        padding: 10px 0;
+        font-size: 5rem;
+        color: $color-primary;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: 15px;
+        color: #2f2f2f;
+    }
+
+    p {
+        padding-bottom: 30px;
+    }
+}

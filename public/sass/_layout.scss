@@ -2,6 +2,10 @@
     @extend %mxw;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -15,6 +19,10 @@
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0 15px 30px;
+}
+
+.section-site-title.section-site-title-sm {
+    font-size: 20px;
 }
 
 .col-md-2 {
@@ -270,4 +278,30 @@ footer {
         background: #000;
         color: $color-light;
     }
+}
+
+.breadcrumb {
+    display: flex;
+    padding: 30px 0 0;
+
+    li:first-child a:hover {
+        color: $color-primary;
+    }
+
+    li:last-child:before {
+        content: '>';
+        margin: 0 10px;
+    }
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.page-title.border-b {
+    border-bottom: 1px solid gray;
 }
