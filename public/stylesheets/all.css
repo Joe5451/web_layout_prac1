@@ -328,7 +328,7 @@ footer > div:nth-child(2) {
 
 .breadcrumb {
   display: flex;
-  padding: 30px 0 0;
+  padding: 30px 0 25px;
 }
 .breadcrumb li:first-child a:hover {
   color: #2D75E3;
