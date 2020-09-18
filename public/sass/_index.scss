@@ -1,16 +1,4 @@
-.wrapper {
-    @extend %mxw;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
 .information {
-    width: 25%;
-    padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-
     li {
         width: 100%;
         background: $bg-light;
@@ -41,18 +29,12 @@
     }
 
     @include breakpoint-md {
-        width: 100%;
         margin-bottom: 30px;
     }
 }
 
 .shopNow-container {
-    display: flex;
-    flex-wrap: wrap;
-
     .shopNow, .shopNow-larger {
-        padding: 0 15px;
-
         &>div {
             padding: 30px;
 
@@ -137,11 +119,6 @@
     }
 }
 
-.hotProducts-container, .specialProducts-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .product-card {
     padding: 0 15px;
     margin-bottom: 40px;
@@ -178,8 +155,6 @@
 }
 
 .features-container {
-    display: flex;
-    flex-wrap: wrap;
 
     .col-md-4 {
 
@@ -220,8 +195,6 @@
 }
 
 .blogs-container {
-    display: flex;
-    flex-wrap: wrap;
 
     .blog {
         padding: 0 15px 15px;

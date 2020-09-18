@@ -761,18 +761,6 @@ footer > div:nth-child(2) {
   }
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.information {
-  width: 25%;
-  padding: 0 15px;
-  display: flex;
-  flex-wrap: wrap;
-}
 .information li {
   width: 100%;
   background: #F5F5F5;
@@ -799,18 +787,10 @@ footer > div:nth-child(2) {
 }
 @media (max-width: 768px) {
   .information {
-    width: 100%;
     margin-bottom: 30px;
   }
 }
 
-.shopNow-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.shopNow-container .shopNow, .shopNow-container .shopNow-larger {
-  padding: 0 15px;
-}
 .shopNow-container .shopNow > div, .shopNow-container .shopNow-larger > div {
   padding: 30px;
 }
@@ -878,11 +858,6 @@ footer > div:nth-child(2) {
   text-align: center;
 }
 
-.hotProducts-container, .specialProducts-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .product-card {
   padding: 0 15px;
   margin-bottom: 40px;
@@ -913,10 +888,6 @@ footer > div:nth-child(2) {
   background: #8533FD;
 }
 
-.features-container {
-  display: flex;
-  flex-wrap: wrap;
-}
 .features-container .col-md-4:nth-child(1) > div {
   background: #2D75E3;
 }
@@ -946,10 +917,6 @@ footer > div:nth-child(2) {
   font-size: 24px;
 }
 
-.blogs-container {
-  display: flex;
-  flex-wrap: wrap;
-}
 .blogs-container .blog {
   padding: 0 15px 15px;
 }
@@ -998,19 +965,11 @@ footer > div:nth-child(2) {
   background: #8533FD;
 }
 
-.about-page {
-  padding: 0 15px;
-}
 .about-page p {
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
   color: #767676;
-}
-
-.ourstore, .ourteam {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .store-card, .ourteam-card {
