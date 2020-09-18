@@ -25,34 +25,6 @@
     font-size: 20px;
 }
 
-.col-md-2 {
-    width: 16.66%;
-    @include breakpoint-md {
-        width: 100%;
-    }
-}
-
-.col-md-3 {
-    width: 25%;
-    @include breakpoint-md {
-        width: 100%;
-    }
-}
-
-.col-md-4 {
-    width: 33.33%;
-    @include breakpoint-md {
-        width: 100%;
-    }
-}
-
-.col-md-9 {
-    width: 75%;
-    @include breakpoint-md {
-        width: 100%;
-    }
-}
-
 header {
     background: url('../img/header-bg.jpg') no-repeat center;
     background-size: cover;
@@ -277,20 +249,6 @@ footer {
         font-size: 12px;
         background: #000;
         color: $color-light;
-    }
-}
-
-.breadcrumb {
-    display: flex;
-    padding: 30px 0 25px;
-
-    li:first-child a:hover {
-        color: $color-primary;
-    }
-
-    li:last-child:before {
-        content: '>';
-        margin: 0 10px;
     }
 }
 
