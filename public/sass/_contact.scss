@@ -20,6 +20,7 @@
     i {
         color: $color-primary;
         font-size: 40px;
+        width: 70px;
     }
 
     .col-md-4 {
@@ -30,7 +31,6 @@
             &:nth-child(4) {order: 2;}
             &:nth-child(5) {order: 5;}
             &:nth-child(6) {order: 6;}
-
         }
     }
 }

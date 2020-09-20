@@ -81,11 +81,6 @@ header .navbar .menu, header .links, .wrapper {
   text-align: center;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .section-site {
   padding: 30px 0;
 }
@@ -304,6 +299,7 @@ footer > div:nth-child(2) {
 
 .container {
   max-width: 1200px;
+  margin: auto;
 }
 
 .btn {
@@ -1015,6 +1011,7 @@ footer > div:nth-child(2) {
 .ourlocation i {
   color: #2D75E3;
   font-size: 40px;
+  width: 70px;
 }
 @media (max-width: 768px) {
   .ourlocation .col-md-4:nth-child(1) {
